@@ -59,12 +59,22 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;        /* space between image and text */
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;       /* adjust based on navbar size */
+  width: auto;
+  border-radius: 8px; /* optional, if you want rounded corners */
+}
+
 
         .nav-links {
             display: flex;
@@ -548,20 +558,24 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">E-Sai Designers</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu" onclick="toggleMobileMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <img src="image.png" alt="E-Sai Designers Logo" class="logo-img" />
+      <span>E-Sai Designers</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="mobile-menu" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
 
     <!-- Hero Carousel -->
     <section id="home" class="hero">
@@ -653,12 +667,12 @@
         </div>
     </section>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Fashion Gallery</title>
+    <title>Our Products - Fashion Gallery</title> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -902,8 +916,8 @@
             }
         }
     </style>
-</head>
-<body>
+<!-- </head> -->
+<!-- <body> -->
     <section id="products">
         <div class="container">
             <div class="section-title">
@@ -1158,8 +1172,8 @@
             });
         });
     </script>
-</body>
-</html>
+<!-- </body>
+</html> -->
 
 <!-- Contact Section --> 
  <section id="contact"> <div class="container"> <div class="section-title"> <h2>Contact Us</h2> <p>Get in touch to discuss your design needs</p> </div> <div class="contact-content"> <div class="contact-form"> <form onsubmit="handleSubmit(event)"> <div class="form-group"> <label for="name">Full Name</label> <input type="text" id="name" name="name" required> </div> <div class="form-group"> <label for="email">Email Address</label> <input type="email" id="email" name="email" required> </div> <div class="form-group"> <label for="phone">Phone Number</label> <input type="tel" id="phone" name="phone" required> </div> <div class="form-group"> <label for="service">Service Interested In</label> <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 8px;"> <option value="">Select a service</option> <option value="tailoring">Custom Tailoring</option> <option value="embroidery">Embroidery & Aari Work</option> <option value="bridal">Bridal Wear</option> <option value="casual">Casual Women Wear</option> <option value="toys">Toy Making</option> <option value="classes">Design Classes</option> </select> </div> <div class="form-group"> <label for="message">Message</label> <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea> </div> <button type="submit" class="submit-btn">Send Message</button> </form> </div> <div class="contact-info"> <div class="contact-item"> <i class="fas fa-map-marker-alt"></i> <div> <strong>Visit Our Shop</strong><br> 15/8A,Kondasamy Layout, Hopes<br> Coimbatore, Tamil Nadu 641004 </div> </div> <div class="contact-item"> <i class="fas fa-phone"></i> <div> <strong>Call Us</strong><br> +91 9751560901<br> </div> </div> <div class="contact-item"> <i class="fas fa-envelope"></i> <div> <strong>Email Us</strong><br> info.esaidesigners@gmail.com<br> </div> </div> <div class="contact-item"> <i class="fas fa-clock"></i> <div> <strong>Working Hours</strong><br> Mon - Sat: 9:00 AM - 8:00 PM<br> </div> </div> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31171.1234567890!2d76.962916!3d11.016844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8598c0a1c0b71%3A0xa1f2def34c9bb1e!2sCoimbatore%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1694775600000!5m2!1sen!2sin" width="100%" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe> </div> </div> </div> </section>
