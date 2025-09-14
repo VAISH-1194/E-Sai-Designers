@@ -1170,42 +1170,20 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form action="https://formsubmit.co/info.esaidesigners@gmail.com" method="POST">
-    <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required>
-    </div>
-    <div class="form-group">
-        <label for="service">Service Interested In</label>
-        <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 8px;">
-            <option value="">Select a service</option>
-            <option value="tailoring">Custom Tailoring</option>
-            <option value="embroidery">Embroidery & Aari Work</option>
-            <option value="bridal">Bridal Wear</option>
-            <option value="casual">Casual Women Wear</option>
-            <option value="toys">Toy Making</option>
-            <option value="classes">Design Classes</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
-    </div>
-    
-    <!-- Hidden fields for extra settings -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
-    
-    <button type="submit" class="submit-btn">Send Message</button>
+                    <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  
+  <!-- optional: redirect after submit -->
+  <input type="hidden" name="_next" value="https://your-domain.com/thanks.html">
+  
+  <!-- optional: stop spam -->
+  <input type="hidden" name="_captcha" value="false">
+  
+  <button type="submit">Send</button>
 </form>
+
 
                 </div>
                 <div class="contact-info">
