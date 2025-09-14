@@ -1376,6 +1376,19 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         }
+
+        // /api/your-fn.js
+export default async function handler(req, res) {
+  try {
+    console.log("req method:", req.method);
+    // your logic...
+    res.status(200).json({ ok: true });
+  } catch (err) {
+    console.error("FUNCTION ERROR:", err);
+    res.status(500).json({ error: err?.message || "unknown error" });
+  }
+}
+
     </script>
 </body>
 </html>
